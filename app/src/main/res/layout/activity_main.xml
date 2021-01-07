@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/verdeIntermedio">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/amarilloContraste"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"/>
+
+    <EditText
+        android:id="@+id/editT_usuario"
+        android:layout_width="285dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:hint="USUARIO"
+        android:textAlignment="center"
+        android:inputType="text"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editT_contasena"
+        android:layout_width="285dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:hint="CONTRASEÑA"
+        android:textAlignment="center"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btn_ingresar"
+        android:onClick="ingresarAlSistema"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ingresar"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:onClick="irARegistroUsuario"
+        android:id="@+id/tv_registrarse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTRARSE"/>
+
+</LinearLayout>
