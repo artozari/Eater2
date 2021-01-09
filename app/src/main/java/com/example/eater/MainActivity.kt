@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         val p = pass.text.toString()
         val loguin = usuarioDao.getLogin(i, p)
         if(loguin){
-            val int = Intent(this, Principal::class.java)
+            val int = Intent(this, MenuPrincipal::class.java)
             startActivity(int)
         }
         else{
